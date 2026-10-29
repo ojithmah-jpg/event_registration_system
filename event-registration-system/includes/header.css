@@ -1,0 +1,206 @@
+
+/* 1. Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/* 2. Body styles */
+
+
+/* 3. Navbar layout */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 5%;
+    background-color: #0b2d50;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* 4. Logo and brand */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    background-color:  #0c8494;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-text h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.logo-text p {
+    font-size: 11px;
+    color: #d5e2f3;
+}
+
+/* 5. Navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e7eef8;
+
+    
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #0c8494;
+}
+
+/* Active page */
+.nav-links a.active {
+    color: #7db3ff;
+}
+
+/* 6. Login and Register buttons */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-btn,
+.register-btn {
+    display: inline-block;
+    padding: 11px 20px;
+
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Login button */
+.login-btn {
+    color: white;
+    border: 1px solid #8ab9ff;
+}
+
+.login-btn:hover {
+    background-color: #17789e;
+}
+
+/* Register button */
+.register-btn {
+    color: white;
+    background-color: #0c8494;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* 7. Main content */
+.main-content {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    color: #0b2d50;
+    margin-bottom: 18px;
+}
+
+.main-content p {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+/* Explore Events button */
+.explore-btn {
+    display: inline-block;
+    padding: 13px 25px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.explore-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* 8. Responsive design */
+@media (max-width: 1100px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+    }
+
+    .login-btn,
+    .register-btn {
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 60px 20px;
+    }
+
+    .main-content h1 {
+        font-size: 28px;
+    }
+}
